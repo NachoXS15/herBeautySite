@@ -8,12 +8,13 @@
     --pink: #ac4f72;
     --purple: #6f3240;
     --lightpink: #D3C4F2;
+    --cream: #edd4d4; 
 
 }
 
 body{
     height: 100vh;
-    background-color: var(--lightpink);
+    background-color: var(--cream);
     font-family: sans-serif;
 }
 
@@ -63,6 +64,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -71,17 +73,45 @@ main{
     height: 400px;
     display: flex;
     justify-content: center;
+    margin-top: 2em;
     flex-wrap: wrap;
-    margin-top: 3em;
     gap: 1em;
     margin-bottom: 2em;
+    border: 1px solid blue;
 }
 
 .infoBox{
     width: 250px;
-    height: 100%;
+    height: 70%;
     border: 1px solid red;
     border-radius: 10px;
     text-align: center;
 }
 
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 400px) {
+    #caract{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #caract{
+        height: 60%;
+    }
+}
