@@ -6,15 +6,15 @@
 
 :root{
     --pink: #ac4f72;
-    --purple: #6f3240;
-    --lightpink: #D3C4F2;
-    --cream: #edd4d4; 
+    --purple: #804654;
+    --lightpink: #F7D2DC;
+    --cream: #F7EBEE; 
 
 }
 
 body{
     height: 100vh;
-    background-color: var(--cream);
+    background-color: var(--lightpink);
     font-family: sans-serif;
 }
 
@@ -81,19 +81,35 @@ main{
 }
 
 .infoBox{
-    width: 250px;
-    height: 70%;
+    width: 270px;
+    height: 90%;
     border: 1px solid red;
     border-radius: 10px;
     text-align: center;
 }
 
+
+#info{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#info div{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
 footer{
     width: 100%;
     height: 200px;
-    background-color: var(--pink);
+    background-color: var(--purple);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     
 }
